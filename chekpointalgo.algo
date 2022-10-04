@@ -1,0 +1,27 @@
+ALGORITHM algorithme phrase
+VAR
+    cpt:INTEGER:=0;
+    c:CHAR;
+    mot:INTEGER:=1;
+    voy:INTEGER:=0;
+
+BEGIN
+    REPEAT
+    Write("donner un caractere");
+    read(c);
+    cpt:= cpt+1;
+    IF (c=' ') THEN
+        mot:= mot+1
+    END_IF
+    IF (c='a' or c='e' or c='u' or c='i' or c='y' or c='o'or c='A'or c='E' or C='U' or c='I' or c='Y' or 'o') 
+        voy:=voy+1
+    END_IF
+
+    UNTIL (c='.')
+    Write ("longeur de la phrase: ", cpt);
+    Write ("le nombre de mots dans la phrase: ", mot);
+    Write ("le nombre de voyelles dans la phrase :", voy);
+
+
+
+END
